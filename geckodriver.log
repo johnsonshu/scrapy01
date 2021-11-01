@@ -156,3 +156,106 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1635410482126	geckodriver	INFO	Listening on 127.0.0.1:4453
+1635410538870	geckodriver	INFO	Listening on 127.0.0.1:7256
+1635410538964	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7257" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofileBesMcc"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635410542603	Marionette	INFO	Listening on port 7260
+1635410542730	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635410542734	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635410727626	Marionette	INFO	Stopped listening on port 7260
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1635412470293	geckodriver	INFO	Listening on 127.0.0.1:7949
+1635412470350	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7950" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilemss9zk"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635412473082	Marionette	INFO	Listening on port 7953
+1635412473491	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635412473494	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635414742205	geckodriver	INFO	Listening on 127.0.0.1:1602
+1635414742268	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1603" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofile0ACtxK"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635414745389	Marionette	INFO	Listening on port 1606
+1635414745426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635414745429	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635468667534	geckodriver	INFO	Listening on 127.0.0.1:14267
+1635468668105	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "14268" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofileGy0RGj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635468671557	Marionette	INFO	Listening on port 14271
+1635468671886	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635468671889	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635470100630	geckodriver	INFO	Listening on 127.0.0.1:9243
+1635470100687	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9244" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofile5rcKlY"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635470103485	Marionette	INFO	Listening on port 9247
+1635470103820	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635470103823	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635470310297	geckodriver	INFO	Listening on 127.0.0.1:5181
+1635470310361	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5182" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilemYG4l0"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635470313260	Marionette	INFO	Listening on port 5185
+1635470313538	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635470313541	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635470465979	geckodriver	INFO	Listening on 127.0.0.1:5627
+1635470466047	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5628" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofileyLCSxt"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635470468701	Marionette	INFO	Listening on port 5631
+1635470469206	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635470469208	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635470690831	Marionette	INFO	Stopped listening on port 5631
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1635477537661	geckodriver	INFO	Listening on 127.0.0.1:12860
+1635477538242	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12861" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofile5NUx0O"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635477541609	Marionette	INFO	Listening on port 12864
+1635477541989	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635477541992	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635478015563	geckodriver	INFO	Listening on 127.0.0.1:7976
+1635478015642	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7977" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofile3NJt6q"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635478018941	Marionette	INFO	Listening on port 7980
+1635478019426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635478019431	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+JavaScript error: resource://gre/actors/ThumbnailsChild.jsm, line 29: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1635478214627	Marionette	INFO	Stopped listening on port 7980
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1635487926982	geckodriver	INFO	Listening on 127.0.0.1:13576
+1635487927577	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "13577" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilejLwK3d"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635487930764	Marionette	INFO	Listening on port 13580
+1635487930861	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635487930864	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+JavaScript error: resource://gre/actors/ThumbnailsChild.jsm, line 29: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1635488431028	geckodriver	INFO	Listening on 127.0.0.1:14385
+1635488431111	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "14386" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofile6bBNOw"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1635488434557	Marionette	INFO	Listening on port 14389
+1635488434885	Marionette	WARN	TLS certificate errors will be ignored for this session
+1635488434889	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"cn-proxy.jp.oracle.com:80","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635488614201	Marionette	INFO	Stopped listening on port 14389
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

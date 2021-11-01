@@ -14,11 +14,11 @@ class CommonItem(Item):
     title = Field()
     article = Field()
     description = Field()
-    info = Field()
+    info_html = Field()
     cover_image_url = Field()
+    carousel_images = Field()
     image_urls = Field()
     image_dl_results = Field()
-
 
     # Housekeeping fields
     meta_url = Field()
@@ -26,3 +26,8 @@ class CommonItem(Item):
     meta_spider = Field()
     meta_server = Field()
     meta_date = Field()
+
+class YifyMoviesItem(CommonItem):
+    download_links = Field()
+    subtitle_links = Field()
+  
