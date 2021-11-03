@@ -13,14 +13,14 @@ import scrapy
 
 LOG_LEVEL = 'INFO'
 LOG_STDOUT = False
-BOT_NAME = 'iroha-dev'
+BOT_NAME = 'prod'
 
 SELENIUM_DRIVER_NAME = 'firefox'
 #SELENIUM_DRIVER_EXECUTABLE_PATH = r"C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
 SELENIUM_DRIVER_EXECUTABLE_PATH = which('geckodriver')
 SELENIUM_DRIVER_ARGUMENTS=['--headless'] 
 
-SPIDER_MODULES = ['scrapy01.spiders']
+SPIDER_MODULES = ['scrapy01.spiders.douxing','scrapy01.spiders.qiangwai']
 NEWSPIDER_MODULE = 'scrapy01.spiders'
 
 #DOWNLOADER_CLIENTCONTEXTFACTORY = 'scrapy01.custom.contexts.CustomContextFactory'
@@ -43,8 +43,8 @@ DOWNLOADER_MIDDLEWARES = {
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'image_dl_results'
 
-CLOSESPIDER_PAGECOUNT = 2
-CLOSESPIDER_ITEMCOUNT = 2
+CLOSESPIDER_PAGECOUNT = 0
+CLOSESPIDER_ITEMCOUNT = 0
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy01 (+http://www.yourdomain.com)'
 
@@ -99,7 +99,7 @@ EXTENSIONS = {
 # }
 
 MONGO_URI = 'ubuntu20-lts:27017'
-MONGO_DATABASE = 'iroha-dev'
+MONGO_DATABASE = 'iroha'
 #MONGOLAB_USER = 'user_name'
 #MONGOLAB_PASS = 'password'
 

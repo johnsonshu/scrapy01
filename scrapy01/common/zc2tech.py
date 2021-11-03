@@ -27,4 +27,3 @@ class Zc2techSpider(CrawlSpider):
         item['meta_server'] = socket.gethostname()
         item['meta_date'] = datetime.datetime.now()
 
-   

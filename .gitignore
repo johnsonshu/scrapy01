@@ -1,2 +1,10 @@
 file_image/
 __pycache__/
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/top_level.txt
+geckodriver.log
+build/
+geckodriver.log

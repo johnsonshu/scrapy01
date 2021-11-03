@@ -13,9 +13,9 @@ from scrapy.selector import Selector
 from scrapy.http import Request
 
 from selenium import webdriver
-from scrapy_selenium import SeleniumRequest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from scrapy01.common.selenium import SeleniumRequest
 
 from scrapy01.items import CommonItem, YifyMoviesItem
 from scrapy01.common.zc2tech import Zc2techSpider
@@ -24,7 +24,7 @@ from scrapy01.common.conditions import *
 # https://ww1.yifymovies.pro/
 
 class YifymoviesSpider(Zc2techSpider):
-    name = 'yifymoves'
+    name = 'yifymovies'
 
     custom_settings = {
         'ITEM_PIPELINES': {
@@ -52,9 +52,9 @@ class YifymoviesSpider(Zc2techSpider):
         pageLinks = response.xpath('//ul[@class="pagination"]/li/a/@href').getall()
         movieLinkes = response.xpath('//div[contains(@class,"movies-list")]//div[@class="ml-item"]/a/@href').getall()
         
-        # TODO: uncomment to add all pages, before deploying to production environment
-        # for link in pageLinks:
-        #     yield Request(link, callback=self.parse)
+        # TODO: comment/uncomment to limit/add all pages, before deploying to production environment
+        for link in pageLinks:
+            yield Request(link, callback=self.parse)
 
         for link in movieLinkes:
             yield SeleniumRequest(url=link, callback=self.parse_item \

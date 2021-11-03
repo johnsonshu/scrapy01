@@ -10,13 +10,16 @@ from itemadapter import ItemAdapter, is_item
 from scrapy import signals
 from scrapy.exceptions import NotConfigured
 from scrapy.http import HtmlResponse
-from scrapy_selenium.http import SeleniumRequest
-from scrapy_selenium.middlewares import SeleniumMiddleware
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver import Firefox
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
 from scrapy01.common.misc import NoneSeleniumRequest
+from scrapy01.common.selenium import SeleniumMiddleware, SeleniumRequest
+
 
 class CustomProxyMiddleware(object):
     def __init__(self, settings):
@@ -33,29 +36,35 @@ class CustomProxyMiddleware(object):
 
 
 class MySeleniumMiddleware(SeleniumMiddleware):
-    def __init__(self, proxy,driver_name,driver_executable_path):
+    def __init__(self, proxy,driver_name,driver_executable_path,options_list):
         PROXY = proxy
         webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
             "httpProxy": PROXY,
-            "ftpProxy": PROXY,
             "sslProxy": PROXY,
             "proxyType": "MANUAL",
         }
         if driver_name == "firefox":
             firefox_profile = webdriver.FirefoxProfile()
             firefox_profile.set_preference('permissions.default.image', 2)
+            options = Options()
+            if options_list != None:
+                for argument in options_list:
+                    options.add_argument(argument)
+
             firefox_profile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so', 'false')
-            self.driver = Firefox(executable_path=driver_executable_path,firefox_profile=firefox_profile)
+            self.driver = Firefox(executable_path=driver_executable_path,firefox_profile=firefox_profile,options=options)
     
     @classmethod
     def from_crawler(cls, crawler):
         proxy = crawler.settings.get('GLOBAL_PROXY')
         driver_name = crawler.settings.get('SELENIUM_DRIVER_NAME')
         driver_executable_path = crawler.settings.get('SELENIUM_DRIVER_EXECUTABLE_PATH')
+        options_list = crawler.settings.get('SELENIUM_DRIVER_ARGUMENTS')
         middleware = cls(
             proxy,
             driver_name=driver_name,
             driver_executable_path=driver_executable_path,
+            options_list = options_list,
         )
 
         crawler.signals.connect(middleware.spider_closed, signals.spider_closed)

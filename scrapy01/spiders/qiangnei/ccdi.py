@@ -1,17 +1,15 @@
 import datetime
 import socket
+
 import scrapy
-
-from scrapy.loader.processors import MapCompose, Join
-from scrapy.linkextractors import LinkExtractor
-
-from scrapy.spiders import CrawlSpider, Rule
-from scrapy.loader import ItemLoader
-from scrapy.selector import Selector
-from scrapy.http import Request
-
+from scrapy01.common.zc2tech import Zc2techSpider
 from scrapy01.items import CommonItem
-from scrapy01.spiders.zc2tech import Zc2techSpider
+from scrapy.http import Request
+from scrapy.linkextractors import LinkExtractor
+from scrapy.loader import ItemLoader
+from scrapy.loader.processors import Join, MapCompose
+from scrapy.selector import Selector
+from scrapy.spiders import CrawlSpider, Rule
 
 # https://www.ccdi.gov.cn/
 # 中纪委

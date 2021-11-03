@@ -259,3 +259,78 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1635901811956	geckodriver	INFO	Listening on 127.0.0.1:14892
+1635901812015	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "14893" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilem3hmnF"
+1635901953438	geckodriver	INFO	Listening on 127.0.0.1:1172
+1635901953524	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1173" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofiles8tzZw"
+1635901954057	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofiles8tzZw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1173/devtools/browser/d3a8a3f4-3336-4a7f-ba06-646185cc5d38
+1635901956861	Marionette	INFO	Listening on port 1176
+1635901999961	geckodriver	INFO	Listening on 127.0.0.1:1245
+1635902000047	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1246" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilePyUCxS"
+1635902000560	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilePyUCxS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1246/devtools/browser/df185f63-e68b-4160-ad34-262c91786cf5
+1635902003132	Marionette	INFO	Listening on port 1249
+1635902003247	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635902003253	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+1635902021805	Marionette	INFO	Stopped listening on port 1249
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1635902022368	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1635902684475	geckodriver	INFO	Listening on 127.0.0.1:14429
+1635902684544	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "14430" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofiledU3eX1"
+1635902685110	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofiledU3eX1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:14430/devtools/browser/856e6aaa-6913-440c-8ae8-e3d20617672c
+1635902688044	Marionette	INFO	Listening on port 14433
+1635902688372	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635902688377	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1635903053959	geckodriver	INFO	Listening on 127.0.0.1:13678
+1635903054050	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--headless" "--remote-debugging-port" "13679" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofileKYZX5O"
+*** You are running in headless mode.
+1635903054607	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofileKYZX5O\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:13679/devtools/browser/2f60042b-c1b9-4536-bd61-820b4d1c7e45
+1635903056322	Marionette	INFO	Listening on port 13682
+1635903056739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635903056742	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1635903073413	Marionette	INFO	Stopped listening on port 13682
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635903074124	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1635903248937	geckodriver	INFO	Listening on 127.0.0.1:13457
+1635903249000	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "13458" "-no-remote" "-profile" "C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilewEmuQ0"
+1635903249550	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zhiyxu\\AppData\\Local\\Temp\\rust_mozprofilewEmuQ0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:13458/devtools/browser/c0b655b9-9aeb-4b72-878f-1250bb6aac83
+1635903252356	Marionette	INFO	Listening on port 13461
+1635903252814	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635903252817	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"cn-proxy.jp.oracle.com:80","sslProxy":"cn-proxy.jp.oracle.com:80"}
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
