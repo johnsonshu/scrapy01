@@ -27,7 +27,7 @@ NEWSPIDER_MODULE = 'scrapy01.spiders'
 DOWNLOADER_CLIENT_TLS_METHOD = 'TLSv1.2'
 DOWNLOADER_CLIENT_TLS_VERBOSE_LOGGING = True
 
-GLOBAL_PROXY = 'cn-proxy.jp.oracle.com:80'
+GLOBAL_PROXY = 'cn-proxy.jp.XXXX.com:80'
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy01.middlewares.CustomProxyMiddleware' : 1,
