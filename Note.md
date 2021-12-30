@@ -27,3 +27,5 @@ curl http://ubuntu20-lts:6800/schedule.json -d project=scrapy01 -d spider=yifymo
 https://stackoverflow.com/questions/64404003/setuptools-find-packages-returns-empty-list
 find_packages internally searchs for __init__.py under the directories/folders
 Create an empty __init__.py then re run find_packages
+
+# TODO: need to gracefully close the selenium web driver.

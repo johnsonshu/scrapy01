@@ -15,6 +15,7 @@ https://pypi.org/project/pymongo/
 ### install selenium and drivers
 https://www.geeksforgeeks.org/how-to-install-selenium-in-python/
 https://selenium-python.readthedocs.io/installation.html
+
 make sure selenium driver path is in PATH environment variable
 
 ### install mongodb
