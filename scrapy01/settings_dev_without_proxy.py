@@ -98,7 +98,7 @@ EXTENSIONS = {
 #     'scrapy01.pipelines.base.MongoPipeline': 300,
 # }
 
-MONGO_URI = 'ubuntu20-lts:27017'
+MONGO_URI = 'localhost:27017'
 MONGO_DATABASE = 'scrapy01'
 #MONGOLAB_USER = 'user_name'
 #MONGOLAB_PASS = 'password'

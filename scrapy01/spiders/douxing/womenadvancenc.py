@@ -5,7 +5,7 @@ import scrapy
 from scrapy.loader.processors import MapCompose, Join
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.loader import ItemLoader
+from itemloaders import ItemLoader
 from scrapy.selector import Selector
 
 from scrapy01.items import CommonItem

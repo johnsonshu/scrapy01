@@ -8,7 +8,7 @@ from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.loader import ItemLoader
+from itemloaders import ItemLoader
 from scrapy.selector import Selector
 from scrapy.http import Request
 
@@ -21,8 +21,8 @@ from scrapy01.items import CommonItem, YifyMoviesItem
 from scrapy01.common.zc2tech import Zc2techSpider
 from scrapy01.common.conditions import *
 
-# https://ww1.yifymovies.pro/
-
+# Old site URL: https://ww1.yifymovies.pro/
+# New URL: https://yify.surf/
 class YifymoviesSpider(Zc2techSpider):
     name = 'yifymovies'
 
@@ -37,12 +37,12 @@ class YifymoviesSpider(Zc2techSpider):
         
     }
 
-    allowed_domains = ['ww1.yifymovies.pro']
+    # allowed_domains = ['yify.surf/']
     # start_urls = ['https://ww1.yifymovies.pro/movies-list/']
 
     def start_requests(self):
         urls = [
-            'https://ww1.yifymovies.pro/movies-list/',
+            'https://yify.surf/movies-list/',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -57,6 +57,7 @@ class YifymoviesSpider(Zc2techSpider):
             yield Request(link, callback=self.parse)
 
         for link in movieLinkes:
+            # yield Request(link, callback=self.parse_item)
             yield SeleniumRequest(url=link, callback=self.parse_item \
                     , wait_time=10 , wait_until=carousel_done())
             

@@ -38,11 +38,12 @@ class CustomProxyMiddleware(object):
 class MySeleniumMiddleware(SeleniumMiddleware):
     def __init__(self, proxy,driver_name,driver_executable_path,options_list):
         PROXY = proxy
-        webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
-            "httpProxy": PROXY,
-            "sslProxy": PROXY,
-            "proxyType": "MANUAL",
-        }
+        if (proxy != None):
+            webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
+                "httpProxy": PROXY,
+                "sslProxy": PROXY,
+                "proxyType": "MANUAL",
+            }
         if driver_name == "firefox":
             firefox_profile = webdriver.FirefoxProfile()
             firefox_profile.set_preference('permissions.default.image', 2)

@@ -15,6 +15,7 @@
             ],
             "env":{
                 "SCRAPY_SETTINGS_MODULE": "scrapy01.settings_dev_with_proxy"
+                
             },
             "justMyCode":false,
             "console": "integratedTerminal"

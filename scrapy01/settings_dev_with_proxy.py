@@ -27,7 +27,7 @@ NEWSPIDER_MODULE = 'scrapy01.spiders'
 DOWNLOADER_CLIENT_TLS_METHOD = 'TLSv1.2'
 DOWNLOADER_CLIENT_TLS_VERBOSE_LOGGING = True
 
-GLOBAL_PROXY = 'cn-proxy.jp.XXXX.com:80'
+GLOBAL_PROXY = 'localhost:1080'
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy01.middlewares.CustomProxyMiddleware' : 1,
@@ -43,8 +43,8 @@ DOWNLOADER_MIDDLEWARES = {
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'image_dl_results'
 
-CLOSESPIDER_PAGECOUNT = 2
-CLOSESPIDER_ITEMCOUNT = 2
+CLOSESPIDER_PAGECOUNT = 0
+CLOSESPIDER_ITEMCOUNT = 10
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy01 (+http://www.yourdomain.com)'
 
@@ -98,8 +98,8 @@ EXTENSIONS = {
 #     'scrapy01.pipelines.base.MongoPipeline': 300,
 # }
 
-MONGO_URI = 'ubuntu20-lts:27017'
-MONGO_DATABASE = 'iroha-dev'
+MONGO_URI = 'localhost:27017'
+MONGO_DATABASE = 'scrapy01'
 #MONGOLAB_USER = 'user_name'
 #MONGOLAB_PASS = 'password'
 
