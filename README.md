@@ -33,8 +33,8 @@ for example: scrapy runspider scrapy01/spiders/douxing/yifymovies.py
 
 ### result sample
 data in MongoDB:
-![image](readme-files\mongodata01.png)
+![image](readme-files/mongodata01.png)
 
 downloaded files structure:
-![image](readme-files\downloaded-files.png)
+![image](readme-files/downloaded-files.png)
 
